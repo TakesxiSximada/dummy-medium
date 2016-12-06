@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TakesxiSximada/dummy-medium/issues"
   },
-  "homepage": "https://github.com/TakesxiSximada/dummy-medium#readme"
+  "homepage": "https://github.com/TakesxiSximada/dummy-medium#readme",
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
 }
