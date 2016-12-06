@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/TakesxiSximada/dummy-medium#readme",
   "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-polyfill": "^6.16.0",
+    "riotjs-loader": "^3.0.0",
     "webpack": "^1.13.3"
   }
 }
