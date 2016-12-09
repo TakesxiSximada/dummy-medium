@@ -53,6 +53,7 @@ mediumそっくりのページを作る
   - [x] content
   - [x] navigation
   - [x] footer
+- [ ] mobile 対応
 - [ ] api
 - [ ] deployment
 - [ ] javascript linterの導入
