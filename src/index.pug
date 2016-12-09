@@ -1,0 +1,195 @@
+mixin create_article
+  article.article
+    p.message Recommended for you based on your interests
+    div.detail
+      img.avater(src="avater.png")
+      div.info
+        div.upper: p
+          a(href="#") TakesxiSximada
+          span in
+          a(href="#") Sximada Inc.
+        div.under: p
+          a(href="#") Oct 25
+          span /
+          a(href="#") 5 min read
+    h1 How to make a logo, for free, in about 5 minutes.
+    p.
+      | After you read this, you should be able to throw together a logo
+      | without hiring a designer in about five minutes.
+      | You‘re not going to end up with the Nike Swoosh or Apple logo,
+      | but you will have enough to get going.
+    p: a(href="#") Read more...
+    div.article_footer
+      div.like_tool
+        a(href="#"): include like.svg
+        span 8.5K
+
+      div.bookmark_tool
+        span 101
+        span resposes
+        span: a(href="#"): include bookmark.svg
+        span: a(href="#"): include arrow-down.svg
+
+
+mixin create_navigations()
+  div.navigation
+    div.navigation_header
+      h1 Editor's Pickups
+      p Stories to write home about.
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+    div.navigation_content
+      div.icon: img.avater(src="avater.png")
+      div.info
+        div.title: a(href="#") A Business Partner, <br/> But #NotMyPosse
+        div.name: a(href="#") TakesxiSximada
+
+
+doctype html
+html(lang="ja")
+  head
+    title= dummy
+    link(href="main.css" type="text/css" rel="stylesheet")
+
+  body
+    header
+      div.loadbar
+      div.container
+
+        div.main
+          div.upper
+
+            div.logo.item
+              span.icon.mark: include medium_mark.svg
+              span.icon: include medium.svg
+
+            div.tool.item
+              div.text-writestory.item: span.text Write Story
+              div.icon.item: include search.svg
+              div.icon.item: include bell.svg
+              div.icon.item: img.avater(src="avater.png")
+
+          div.under
+            ul.menu
+              li.item For you
+              li.item Editors' pick
+              li.item Reading roulette
+              li.item Body talk
+              li.item Climate change
+              li.item Donald
+              li.item Glover
+              li.item Politics
+              li.item Humor
+              li.item Top stories
+              li.item Bookmarks
+
+    div.main_content
+      div.contents
+        div.editor
+          div.icon
+            img.avater(src="avater.png")
+          div.text Write here...
+
+        div.articles
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+          +create_article()
+
+
+      div.navigation_container
+        +create_navigations()
+        +create_navigations()
+        +create_navigations()
+        +create_navigations()
+
+        footer
+          ul
+            li: a(href="#") Help
+            li: a(href="#") Blog
+            li: a(href="#") Careers
+            li: a(href="#") Privacy
+            li: a(href="#") Terms
+            li: a(href="#") About
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //-     div.header__banner a
+    //-       span.icon-logo-image: include medium_mark.svg
+    //-       span.icon-logo-text: include medium.svg
+
+    //-     ul.header__nav
+    //-       span.text-writestory Write Story
+    //-       span.icon-search: include search.svg
+    //-       span.icon-notification: include bell.svg
+    //-       span.icon-avater: img(src="avater.png")
+
+    //-   ul.header__lower
+    //-     li For you
+    //-     li Editors' pick
+    //-     li Reading roulette
+    //-     li Body talk
+    //-     li Climate change
+    //-     li Donald
+    //-     li Glover
+    //-     li Politics
+    //-     li Humor
+    //-     li Top stories
+    //-     li Bookmarks
+    //- div.main_content test
+
+    //- script(src="js/main.js")

@@ -1,0 +1,64 @@
+## goal
+
+mediumそっくりのページを作る
+
+## task
+- [x] npm init
+- [x] deploy.mk作成
+- [x] babel
+  - [x] install babel-core
+  - [x] install babel-loader
+  - [x] install babel-cli
+  - [x] install babel-polyfill
+  - [x] install babel-preset-latest
+  - [x] install babel-plugin-transform-es2015-template-literals
+  - [x] create babelrc
+- [*] webpack
+  - [x] install webpack
+  - [x] install webpack-dev-server
+  - [x] install file-loader
+  - [x] create webpack.config.babel.js
+  - [x] deploy.mkにdev server起動コマンドを作成
+    - [x] --inline
+    - [x] --conten-base dst
+  - [x] deploy.mkにbuildコマンドを作成
+- [*] gulp
+  - [x] create src/index.html
+  - [x] deploy.mkにgulpコマンドを追加
+  - [x] install gulp
+  - [x] install gulp-babel
+  - [x] install gulp-watch
+  - [x] browser-sync
+    - [x] install
+    - [x] add gulp task
+  - [x] create gulpfile.babel.js
+  - [x] watch-webpack task
+  - [x] webpack-dev-server task
+  - [x] pug
+    - [x] install gulp-pug
+    - [x] gulpfile.babel.jsにpug taskを追加
+  - [x] stylus
+    - [x] install gulp-stylus
+    - [x] gulpfile.babel.jsにstylus taskを追加
+- [x] CDNの設定
+  - [x] install gulp-cdnizer
+  - [x] develop buildの時はlocalのファイルを見に行く
+  - [x] release buildの時はcdnのファイルを見に行く
+  - [x] CDNファイルのrootディレクトリにはrelease numberが設定されてrelease buildごとにCDNに配置できるようにする
+  - [x] 古いrelease numberのCDNファイルは削除可能かどうかがわかるようにする
+- [x] frontpage
+  - [x] layout
+  - [x] header
+  - [x] menu
+  - [x] content
+  - [x] navigation
+  - [x] footer
+- [ ] api
+- [ ] deployment
+- [ ] javascript linterの導入
+- [ ] css linterの導入
+- [ ] stylusからpostcssへの乗り換え
+- [ ] deploy
+  - [ ] コマンド1発デプロイ
+  - [ ] masterにmergeしたら自動的にdeploy
+  - [ ] 古いrelease numberのCDNファイルは自動削除される
